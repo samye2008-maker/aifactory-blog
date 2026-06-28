@@ -5,7 +5,7 @@ import { viteSeoPlugin } from "./vite-plugin-seo"
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: './',
+  base: '/',
   plugins: [react(), viteSeoPlugin()],
   resolve: {
     alias: {
