@@ -1,0 +1,242 @@
+/*
+ * Mdnice 自定义主题 — 与博客风格统一
+ * 
+ * 使用方法：
+ * 1. 打开 https://www.mdnice.com/
+ * 2. 点击右上角「主题」→「新建主题」
+ * 3. 主题名称填写：AI制造卓越运营
+ * 4. 将本文件的全部内容粘贴到 CSS 编辑区
+ * 5. 保存主题
+ * 
+ * 之后每次同步文章时，选择此主题即可
+ */
+
+/* ========== 基础排版 ========== */
+.Article {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #1f2937;
+  letter-spacing: 0.5px;
+  word-spacing: 2px;
+  padding: 20px 16px;
+}
+
+/* ========== 标题样式 ========== */
+.Article h1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #111827;
+  text-align: center;
+  margin: 30px 0 20px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #2563eb;
+  line-height: 1.4;
+}
+
+.Article h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #111827;
+  margin: 28px 0 16px;
+  padding: 8px 0 8px 12px;
+  border-left: 4px solid #2563eb;
+  background: linear-gradient(to right, #eff6ff, transparent);
+  line-height: 1.4;
+}
+
+.Article h3 {
+  font-size: 17px;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 24px 0 12px;
+  padding-left: 10px;
+  border-left: 3px solid #93c5fd;
+  line-height: 1.4;
+}
+
+.Article h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #374151;
+  margin: 20px 0 10px;
+  line-height: 1.4;
+}
+
+/* ========== 正文段落 ========== */
+.Article p {
+  margin: 16px 0;
+  text-align: justify;
+  color: #374151;
+}
+
+/* ========== 引用块 ========== */
+.Article blockquote {
+  margin: 16px 0;
+  padding: 12px 16px;
+  background: #f0f9ff;
+  border-left: 4px solid #2563eb;
+  border-radius: 0 8px 8px 0;
+  color: #1e40af;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.Article blockquote p {
+  margin: 6px 0;
+  color: #1e40af;
+}
+
+/* ========== 列表 ========== */
+.Article ul,
+.Article ol {
+  margin: 16px 0;
+  padding-left: 24px;
+  color: #374151;
+}
+
+.Article li {
+  margin: 8px 0;
+  line-height: 1.7;
+}
+
+.Article ul li::marker {
+  color: #2563eb;
+}
+
+.Article ol li::marker {
+  color: #2563eb;
+  font-weight: 600;
+}
+
+/* ========== 代码块 ========== */
+.Article pre {
+  margin: 16px 0;
+  padding: 16px;
+  background: #1e293b;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.Article pre code {
+  color: #e2e8f0;
+  background: transparent;
+  padding: 0;
+  font-size: 14px;
+  font-family: "SF Mono", "Fira Code", "Consolas", "Monaco", monospace;
+}
+
+/* 行内代码 */
+.Article code {
+  background: #f1f5f9;
+  color: #dc2626;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: "SF Mono", "Fira Code", "Consolas", "Monaco", monospace;
+  font-weight: 500;
+}
+
+/* ========== 表格 ========== */
+.Article table {
+  width: 100%;
+  margin: 16px 0;
+  border-collapse: collapse;
+  font-size: 14px;
+  overflow-x: auto;
+  display: block;
+}
+
+.Article thead {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.Article th {
+  padding: 10px 12px;
+  text-align: left;
+  font-weight: 600;
+  border: 1px solid #1d4ed8;
+  color: #ffffff;
+}
+
+.Article td {
+  padding: 8px 12px;
+  border: 1px solid #e5e7eb;
+  color: #374151;
+  line-height: 1.6;
+}
+
+.Article tbody tr:nth-child(even) {
+  background: #f8fafc;
+}
+
+.Article tbody tr:hover {
+  background: #eff6ff;
+}
+
+/* ========== 图片 ========== */
+.Article img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 16px auto;
+  display: block;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ========== 分割线 ========== */
+.Article hr {
+  margin: 24px 0;
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #93c5fd, transparent);
+  border-radius: 1px;
+}
+
+/* ========== 链接 ========== */
+.Article a {
+  color: #2563eb;
+  text-decoration: none;
+  border-bottom: 1px dashed #93c5fd;
+  transition: all 0.2s;
+}
+
+.Article a:hover {
+  color: #1d4ed8;
+  border-bottom: 1px solid #1d4ed8;
+}
+
+/* ========== 强调样式 ========== */
+.Article strong {
+  font-weight: 700;
+  color: #111827;
+}
+
+.Article em {
+  font-style: italic;
+  color: #4b5563;
+}
+
+/* ========== 删除线 ========== */
+.Article del {
+  color: #9ca3af;
+}
+
+/* ========== 公众号底部签名 ========== */
+.Article .wechat-footer {
+  margin-top: 32px;
+  padding: 16px;
+  background: #f8fafc;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 14px;
+  color: #6b7280;
+  border: 1px solid #e5e7eb;
+}
+
+.Article .wechat-footer strong {
+  color: #2563eb;
+}
