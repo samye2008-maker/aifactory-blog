@@ -29,3 +29,4 @@ yarn-debug.log*
 # misc
 *.md
 !README.md
+!content/**/*.md
